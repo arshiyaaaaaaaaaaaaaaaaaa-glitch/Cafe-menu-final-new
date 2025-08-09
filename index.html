@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cafe Menu</title>
+<style>
+  :root {
+    --dark-green: #023020;
+    --light-white: #ffffff;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at 20% 20%, var(--dark-green) 0%, transparent 40%),
+                radial-gradient(circle at 80% 30%, var(--dark-green) 0%, transparent 35%),
+                radial-gradient(circle at 50% 80%, var(--dark-green) 0%, transparent 40%),
+                var(--light-white);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: var(--dark-green);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 50px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .phone-icon {
+    cursor: pointer;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-btn {
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+  }
+
+  .menu-btn:hover {
+    background-color: #035c3a;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="phone-icon">📞</div>
+  <div class="logo-text">cafe</div>
+</header>
+
+<main>
+  <button class="menu-btn" onclick="location.href='breakfast.html'">منوی صبحانه</button>
+  <button class="menu-btn" onclick="location.href='cafe.html'">منوی کافه</button>
+</main>
+
+</body>
+</html>
