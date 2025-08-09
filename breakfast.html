@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Breakfast Menu</title>
+<style>
+  :root {
+    --dark-green: #023020;
+    --light-white: #ffffff;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at 20% 20%, var(--dark-green) 0%, transparent 40%),
+                radial-gradient(circle at 80% 30%, var(--dark-green) 0%, transparent 35%),
+                radial-gradient(circle at 50% 80%, var(--dark-green) 0%, transparent 40%),
+                var(--light-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: var(--dark-green);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 50px;
+  }
+
+  .back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--dark-green);
+  }
+
+  .menu-list {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <button class="back-btn" onclick="location.href='index.html'">⬅</button>
+  <h2>منوی صبحانه</h2>
+</header>
+
+<div class="menu-list">
+  <div class="menu-item"><span>املت</span><span>45 T</span></div>
+  <div class="menu-item"><span>صبحانه انگلیسی</span><span>90 T</span></div>
+  <div class="menu-item"><span>تخم مرغ نیمرو</span><span>40 T</span></div>
+  <div class="menu-item"><span>پنکیک</span><span>65 T</span></div>
+  <div class="menu-item"><span>نان و پنیر و گردو</span><span>55 T</span></div>
+  <div class="menu-item"><span>شکلات صبحانه</span><span>50 T</span></div>
+  <div class="menu-item"><span>عسل طبیعی</span><span>60 T</span></div>
+  <div class="menu-item"><span>فرنچ تست</span><span>70 T</span></div>
+</div>
+
+</body>
+</html>
